@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Kelvin To Fahrenheit Project</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
+
+    </head>
+    
+    <body class="bg-dark">
+
+        <h1 class="text-white bg-dark" style="margin-top: 10%; margin-left: 25%;">Please Open The Console To See The Magic!</h1>
+        
+        <br>
+        
+        <p class="text-white bg-dark" style="margin-left: 25%;">Windows: Ctrl + Shift + I</p>
+        <p class="text-white bg-dark" style="margin-left: 25%;">Mac: Option/Alt + Command + U</p>
+        
+        <script>
+
+            // Temperature in Kevlin stored in a variable named kevlinTemp.
+            var kelvinTemp = 301;
+
+            // Temperature in Celsius stored in a variable named celsiusTemp.
+            var celsiusTemp =   kelvinTemp - 273.15;
+
+            // Converted temperature in Celsius to Fahrenheit stored in a variable named fahrenheitTemp.
+            var fahrenheitTemp = celsiusTemp * (9/5) + 32;
+
+            // Log to the console the value of fahrenheitTemp.
+            console.log(Math.floor(fahrenheitTemp));
+
+            // Round the value of fahrenheit down and assign to `fahrenheit`
+            fahrenheitTemp = Math.floor(fahrenheitTemp);
+
+            // use string concatenation to leave a message
+            // "The temperature is `fahrenheit` degrees Fahrenheit."
+            console.log('The temperature is ' + fahrenheitTemp + ' degrees Fahrenheit.');
+
+        </script>
+    </body>
+</html>
